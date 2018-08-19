@@ -1,5 +1,6 @@
 body{
   margin: 0px;
+  background-color:  white;
 }
 
 #header, #content {
@@ -9,7 +10,6 @@ body{
 .wrapper {
   display: grid;
   grid-template-rows: 100% 100% 100% 100% 100%;
-  background-color: grey;
   color: #444;
 }
 
