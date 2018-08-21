@@ -1,6 +1,8 @@
 body{
   margin: 0px;
   background-color:  white;
+  font-family: 'Noto Sans', sans-serif, "Times New Roman", Times, serif;
+
 }
 
 #header, #content {
@@ -21,47 +23,88 @@ body{
 /* nav */
 #header {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-rows: : 100% 100%;
   grid-gap: 1px;
-  color: #444;
-  height : 30px;
-  padding: 10px;
-  background-color: #2c3e50;
-
-}
-
-.headerSection {
-  color: white;
-  margin: 0px;
+  background-color: white;
+  color: black;
 }
 
 #smallLogo {
   height: auto;
-  width: 5%;
+  width: 20%;
 }
 
 #logo{
+  font-size: 40px;
+}
+
+#logo_detail{
+  margin: 0px;
+}
+
+#header_detail{
   margin-left: 80px;
+  margin-top: 10px;
+  grid-template-columns: 50% 50%;
+  display: grid;
+}
+
+#phone {
+  height: 80px;
+  padding: 30px;
+}
+
+#phone_icon {
+  width: 50px;
+  height: auto;
+  float: left;
+}
+
+#phone_number {
+  font-size: 30px;
+  float: left;
+  padding-top: 10px;
+  padding-left: 30px;
+}
+
+#phone_detail {
+  margin-left: 250px;
 }
 
 /* nav */
 #nav {
-  margin-left: 330px;
+  width: 1200px;
+  margin: auto;
+  height: 22px;
+  padding: 10px;
 }
 
 .navBtn {
-  margin-left: 5px;
-  margin-top: 5px;
+  margin-right: 10px;
   background-color: transparent;
-  color: white;
-  border: 0px;
   cursor: pointer;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.navBtn:hover {
+  background-color: #DEDEDE;
 }
 
 /* home */
 #home{
   height: 850px;
   position: relative;
+}
+
+#homeText {
+  z-index: 1;
+  color: white;
+  position: absolute;
+  margin-left: 55%;
+  margin-top: 150px;
+  font-size: 80px;
 }
 
 #bg{
@@ -71,14 +114,6 @@ body{
   position: absolute;
   margin-top: -80px;
   z-index: 0;
-}
-
-#homeText {
-  z-index: 1;
-  color: white;
-  position: absolute;
-  margin-left: 55%;
-  margin-top: 200px;
 }
 
 #line {
@@ -182,7 +217,7 @@ body{
 
 #contactUs_detail {
   position: relative;
-  margin-top : -90px;
+  margin-top : -150px;
   margin-bottom: 50px;
 }
 
@@ -190,8 +225,26 @@ body{
   margin-top: -115px;
 }
 
+#form{
+  margin-top: -20px;
+}
+
 #form, #contactUs_detail {
   margin-left : 40px;
+}
+
+.submitBtn {
+  padding: 13px;
+  background-color: transparent;
+  border: 1px solid #ee7f7f;
+  border-radius: 30px;
+  color: #ee7f7f;
+  cursor: pointer;
+}
+
+.submitBtn:hover {
+  background-color: white;
+  opacity: 0.9;
 }
 
 /* footer */
@@ -208,10 +261,29 @@ body{
 
 .footer_nav {
   float: left;
+  padding-bottom: 10px;
 }
 
-#footer_detail {
+#footer_detail, #footer_detail2 {
   margin-left: 100px;
+}
+
+.footer_link {
+  text-decoration: none;
+  color: white;
+}
+
+.sosmed_icon{
+  width: 40px;
+  float: right;
+}
+
+#facebook{
+  background-color: white;
+}
+
+#gmail{
+  padding-right: 10px;
 }
 
 /*map*/
@@ -222,4 +294,11 @@ body{
   overflow:hidden;
   background:none!important;
   height:750px;
-  width:100%;}
+  width:100%;
+}
+
+@media only screen and (min-device-width:320px) and (max-device-width:1024px) {
+  #home{
+    height: 750px;
+  }
+}
