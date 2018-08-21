@@ -5,6 +5,7 @@
 	
 	<meta charset = "utf-8" name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../css/style.css" />
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
 	<!--[if lt IE 9]>
         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -18,22 +19,34 @@
 <body><!--<![endif]-->
 	<div class="wrapper">
 		<div class="box" id="header"><!--nav-->
-			<div class="headerSection" id="logo">				
-				<img id="smallLogo" src="../resources/Hote_International_logo.png" >
-				ote International
+			<div id="header_detail">				
+				<div id="logo">
+					<P id="logo_detail"><img id="smallLogo" src="../resources/Hote_International_logo.png" >
+					ote International</P>
+				</div>
+				<div id="phone">
+					<div id="phone_detail">
+						<img id="phone_icon" src="../resources/phone-receiver.png" >
+						<div id="phone_number"><span>+612 9261 3322</span></div>
+					</div>
+				</div>
 			</div>
-			<div class="headerSection" id="nav">
-				<button class="navBtn">Home</button>
-				<button class="navBtn">About us</button>
-				<button class="navBtn">Migration</button>
-				<button class="navBtn">Education</button>
-				<button class="navBtn">Contact us</button>
+
+			<div id="nav">
+				<a href="#home" class="navBtn">Home</a>
+				<a href="#aboutUs" class="navBtn">About Us</a>
+				<a href="#migrate" class="navBtn">Migration</a>
+				<a href="#contactUs" class="navBtn">Contact Us</a>
 			</div>
 		</div>
 
 		<div class="" id="home"><!--home-->
 			<img id="bg" src="../resources/michael-amadeus-470453-unsplash-edited.jpg" >
-			<p id="homeText">Hote International Pty Ltd is a professional Australian immigration agent authorized by MARA<br />Know more about us</p>
+			<div id="homeText">
+				<span class="a-1">"</span>
+				<span class="a">Connects to Your Future</span>
+				<span class="a-3">"</span>
+			</div>
 			<img id="line" src="../resources/lines.png" >
 		</div>
 
@@ -48,7 +61,7 @@
 				</div>
 
 				<div id="aboutUs_text">
-					The company is headquartered
+					Hote International Pty Ltd is a professional Australian immigration agent authorized by MARA.The company is headquartered
 					in the heart of Sydney, Australia. With years of experience in the
 					industry, the company has strong Australian political and political
 					resources, and is involved in immigration, study abroad, finance, real
@@ -95,10 +108,10 @@
 
 				<p id="contactUs_detail">
 					SYDNEY OFFICE : <br />
-					Suite 801 <br />
+					Suite 806 <br />
 					97-99 Bathurst Street <br />
 					Sydney NSW 2000 <br />
-					Phone : (+61) 406 999 103
+					Phone : (+61) 2 9261 3322
 				</p>
 
 				<form id="form">
@@ -111,7 +124,7 @@
 					<br><br>
 					<textarea name="comment" form="usr_comment" placeholder="Your Query" class="contactUs_commentBox"></textarea>
 					<br><br>
-					<input type="submit" value="Submit" >
+					<input class="submitBtn" type="submit" value="Submit" >
 				</form>
 			</div>
 		</div>
@@ -119,16 +132,30 @@
 		<div class="box e" id="footer"><!--footer-->
 			<div id="footer_content">
 				<div class="footer_nav">
-					Home <br>
-					Migration <br>
+					<P>
+						<a href="#home" class="footer_link">Home</a><br/>
+						<a href="#migrate" class="footer_link">Migration</a>
+					</P>
 				</div>
 
 				<div class="footer_nav" id="footer_detail">
 					Details <br /><br />
-					info@hotegroup.com.au<br />
-					Suite 801 <br />
+					manage@hotegroup.com.au<br />
+					Suite 806 <br />
 					97-99 Bathurst Street <br />
 					Sydney NSW 2000
+				</div>
+
+				<div class="footer_nav" id="footer_detail2">
+					<p>
+						ACN : 604717357<br />
+						ABN: 70604717357
+					</p>
+				</div>
+
+				<div>
+					<img src="../resources/facebook.png" alt="facebook" class="sosmed_icon" id="facebook">
+					<img src="../resources/gmail.png" alt="gmail" class="sosmed_icon" id="gmail">
 				</div>
 			</div>
 			
