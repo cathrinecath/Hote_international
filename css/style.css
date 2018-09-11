@@ -34,6 +34,12 @@ body{
   width: 20%;
 }
 
+#logo_text{
+  position: absolute;
+  margin-top: -80px;
+  margin-left: 144px;
+}
+
 #logo{
   font-size: 40px;
 }
@@ -186,6 +192,11 @@ body{
 }
 
 /*contact us */
+#form{
+  margin-left: 40px;
+
+}
+
 #contactUs {
   display: grid;
   grid-template-columns: 50% 50%;
