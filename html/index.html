@@ -21,8 +21,8 @@
 		<div class="box" id="header"><!--nav-->
 			<div id="header_detail">				
 				<div id="logo">
-					<P id="logo_detail"><img id="smallLogo" src="../resources/Hote_International_logo.png" >
-					ote International</P>
+					<div id="logo_detail"><img id="smallLogo" src="../resources/Hote_International_logo_black.png" >
+					<div id="logo_text">ote International</div></div>
 				</div>
 				<div id="phone">
 					<div id="phone_detail">
@@ -98,7 +98,9 @@
 
 		<div class="" id="contactUs"><!--contact us-->
 			<div class="content" id="gglmap"><!-- map-->
-				<div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="750" id="gmap_canvas" src="https://maps.google.com/maps?q=97-99%20Bathurst%20Street&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div></div>
+				<div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="750" src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=321%20pitt%20street+(Hote%20International)&amp;ie=UTF8&amp;t=&amp;z=17&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div></div>
+
+				
 			</div>
 			<div class="content" id="contactForm">
 				<div id="contactUs_title">
@@ -108,21 +110,21 @@
 
 				<p id="contactUs_detail">
 					SYDNEY OFFICE : <br />
-					Suite 806 <br />
-					97-99 Bathurst Street <br />
+					Suite 601 <br />
+					321 Bathurst Street <br />
 					Sydney NSW 2000 <br />
 					Phone : (+61) 2 9261 3322
 				</p>
 
-				<form id="form">
-					First name:<br>
+				<form id="form" method="POST" action="https://formspree.io/cathrine.holic@gmail.com">
+					<label>First name:</label><br>
 					<input type="text" name="firstname" placeholder="First Name" class="contactUs_formBox"><br>
-					Last name:<br>
+					<label>Last name:</label><br>
 					<input type="text" name="lastname" placeholder="Last Name" class="contactUs_formBox"><br>
-					E-mail: <br />
-					<input type="email" name="usr_email" placeholder="email" class="contactUs_formBox">
+					<label>E-mail:</label><br>
+					<input type="email" name="email" placeholder="email" class="contactUs_formBox">
 					<br><br>
-					<textarea name="comment" form="usr_comment" placeholder="Your Query" class="contactUs_commentBox"></textarea>
+					<textarea name="comment" form="message" placeholder="Your message" class="contactUs_commentBox"></textarea>
 					<br><br>
 					<input class="submitBtn" type="submit" value="Submit" >
 				</form>
@@ -141,8 +143,8 @@
 				<div class="footer_nav" id="footer_detail">
 					Details <br /><br />
 					manage@hotegroup.com.au<br />
-					Suite 806 <br />
-					97-99 Bathurst Street <br />
+					Suite 601 <br />
+					321 Pitt Street <br />
 					Sydney NSW 2000
 				</div>
 
